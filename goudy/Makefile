@@ -1,16 +1,15 @@
 # $NetBSD$
 #
 
-DISTNAME=	gb1911-2010.07.03
-PKGNAME=	${DISTNAME:S/.//g}
+DISTNAME=	goudy-3.1
 CATEGORIES=	fonts
 MASTER_SITES=	http://sortsmill.googlecode.com/files/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	ryo_on@yk.rim.or.jp
 HOMEPAGE=	http://sortsmill.googlecode.com/files/
-COMMENT=	Goudy Bookletter 1911 font
-LICENSE=	public-domain
+COMMENT=	Sorts Mill Goudy Oldstyle and Italic fonts
+LICENSE=	mit
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
@@ -27,8 +26,8 @@ FONTS_DIRS.ttf=	${FONTDIR}
 INSTALLATION_DIRS=	lib/X11/fonts/TTF \
 			${DOCSDIR}
 
-INSTALL_FONTS=	GoudyBookletter1911TT.ttf \
-		GoudyBookletter1911.otf
+INSTALL_FONTS=	GoudyStM.otf GoudyStMTT.ttf \
+		GoudyStM-Italic.otf GoudyStMTT-Italic.ttf
 INSTALL_DOCS=	COPYING
 
 do-install:
