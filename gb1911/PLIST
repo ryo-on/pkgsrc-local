@@ -1,5 +1,4 @@
 @comment $NetBSD$
-lib/X11/fonts/TTF/COPYING
 lib/X11/fonts/TTF/GoudyBookletter1911.otf
 lib/X11/fonts/TTF/GoudyBookletter1911TT.ttf
-@pkgdir share/doc/gb1911
+share/doc/gb1911/COPYING
