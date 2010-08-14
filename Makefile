@@ -1,6 +1,6 @@
-#
+# $NetBSD$
 #
 
 COMMENT=	ryo-on's pkgsrc packages
 
-SUBDIR+=	
+SUBDIR+=	gb1911
