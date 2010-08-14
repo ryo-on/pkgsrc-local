@@ -1,0 +1,4 @@
+@comment $NetBSD$
+lib/X11/fonts/TTF/Prociono.otf
+lib/X11/fonts/TTF/ProcionoTT.ttf
+share/doc/prociono/COPYING
