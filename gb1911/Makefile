@@ -8,7 +8,7 @@ MASTER_SITES=	http://sortsmill.googlecode.com/files/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	ryo_on@yk.rim.or.jp
-HOMEPAGE=	http://sortsmill.googlecode.com/files/
+HOMEPAGE=	http://crudfactory.com/cf3/gb1911.xhtml
 COMMENT=	Goudy Bookletter 1911 font
 LICENSE=	public-domain
 
