@@ -1,0 +1,20 @@
+$NetBSD$
+
+--- config.mk.orig	2010-07-19 20:12:11.000000000 +0000
++++ config.mk
+@@ -21,6 +21,15 @@ else
+  ifeq ($(shell uname),FreeBSD)
+  LDFLAGS=-rdynamic -lpthread -lm -lz -lSDL
+  else
++ endif
++  ifeq ($(shell uname),DragonFly)
++  LDFLAGS=-rdynamic -lpthread -lm -lz -lSDL
++  else
++  endif
++   ifeq ($(shell uname),NetBSD)
++   LDFLAGS=-rdynamic -lpthread -lm -lz -lSDL
++   else
++   endif
+  $(error Unknown architecture)
+  endif
+ endif
