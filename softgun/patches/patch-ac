@@ -1,0 +1,18 @@
+$NetBSD$
+
+--- Makefile.orig	2010-07-19 20:12:11.000000000 +0000
++++ Makefile
+@@ -4,8 +4,11 @@ include config.mk
+ ECHO=/bin/echo
+ ifeq ($(shell uname),FreeBSD)
+ MAKE=gmake
+-else
+-MAKE=make
++ ifeq ($(shell uname),FreeBSD)
++ MAKE=gmake
++ else
++  MAKE=make
++ endif
+ endif
+ 
+ SUBDIRS=  tools

@@ -3,4 +3,6 @@ $NetBSD$
 SHA1 (softgun-0.19.tgz) = e6dd48ffb004f5addf6e3d2181424acd7ef5fd4c
 RMD160 (softgun-0.19.tgz) = 7342276b993d7c7142ee13296853b83bf79ba81e
 Size (softgun-0.19.tgz) = 980765 bytes
-SHA1 (patch-aa) = e059ef0a80af3c133f7d138d2c8c36a99386b0be
+SHA1 (patch-aa) = 0424f59e51a9d4f5b5653333886b14e2cb3dc083
+SHA1 (patch-ab) = 474027b6c2843a92a0f4eeee99b37da0dbf4c06e
+SHA1 (patch-ac) = 82aaa3c98fd8d52f8fbffd0541b4b5d29ade20ea
