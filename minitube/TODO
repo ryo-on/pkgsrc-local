@@ -1,0 +1,2 @@
+* Make videos playable. (xine backend is bad? how to select backend?)
+  phonon is too complex to fix for me.

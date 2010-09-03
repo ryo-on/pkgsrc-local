@@ -1,0 +1,27 @@
+@comment $NetBSD$
+bin/minitube
+share/minitube/locale/ar.qm
+share/minitube/locale/bg_BG.qm
+share/minitube/locale/cs_CZ.qm
+share/minitube/locale/de_DE.qm
+share/minitube/locale/el_GR.qm
+share/minitube/locale/es.qm
+share/minitube/locale/fi_FI.qm
+share/minitube/locale/fr_FR.qm
+share/minitube/locale/gl.qm
+share/minitube/locale/he_IL.qm
+share/minitube/locale/hr_HR.qm
+share/minitube/locale/hu_HU.qm
+share/minitube/locale/it_IT.qm
+share/minitube/locale/ja_JP.qm
+share/minitube/locale/lat.qm
+share/minitube/locale/nb_NO.qm
+share/minitube/locale/nl_NL.qm
+share/minitube/locale/pl_PL.qm
+share/minitube/locale/pt_BR.qm
+share/minitube/locale/pt_PT.qm
+share/minitube/locale/ro_RO.qm
+share/minitube/locale/ru_RU.qm
+share/minitube/locale/tr_TR.qm
+share/minitube/locale/uk.qm
+share/minitube/locale/zh_CN.qm
