@@ -1,0 +1,2 @@
+@comment $NetBSD$
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/Chunkfive.otf
