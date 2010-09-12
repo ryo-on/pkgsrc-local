@@ -1,0 +1,3 @@
+@comment $NetBSD$
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/Miama.ttf
+@pkgdir share/doc/miama
