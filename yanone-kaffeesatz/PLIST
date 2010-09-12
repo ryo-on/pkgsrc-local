@@ -1,0 +1,6 @@
+@comment $NetBSD$
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/YanoneKaffeesatz-Bold.otf
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/YanoneKaffeesatz-Light.otf
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/YanoneKaffeesatz-Regular.otf
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/YanoneKaffeesatz-Thin.otf
+@pkgdir share/doc/yanone-kaffeesatz
