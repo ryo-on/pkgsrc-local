@@ -33,8 +33,5 @@ do-install:
 .for fontfile in ${INSTALL_FONTS}
 	${INSTALL_DATA} ${WRKSRC}/${fontfile} ${DESTDIR}${FONTDIR}
 .endfor
-.for docfile in ${INSTALL_DOCS}
-	${INSTALL_DATA} ${WRKSRC}/${docfile} ${DESTDIR}${DOCSDIR}
-.endfor
 
 .include "../../mk/bsd.pkg.mk"
