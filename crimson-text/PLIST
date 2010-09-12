@@ -1,0 +1,8 @@
+@comment $NetBSD$
+lib/X11/fonts/TTF/CrimsonText-Bold.otf
+lib/X11/fonts/TTF/CrimsonText-BoldItalic.otf
+lib/X11/fonts/TTF/CrimsonText-Italic.otf
+lib/X11/fonts/TTF/CrimsonText-Roman.otf
+lib/X11/fonts/TTF/CrimsonText-Semibold.otf
+lib/X11/fonts/TTF/CrimsonText-SemiboldItalic.otf
+share/doc/crimson-text/README
