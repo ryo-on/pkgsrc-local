@@ -1,0 +1,5 @@
+@comment $NetBSD$
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/nobile.ttf
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/nobile_bold.ttf
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/nobile_bold_italic.ttf
+lib/X${PKGVERSION}${PKGVERSION}/fonts/TTF/nobile_italic.ttf
