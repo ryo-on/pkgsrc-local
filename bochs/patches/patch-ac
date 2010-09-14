@@ -1,0 +1,13 @@
+$NetBSD$
+
+--- configure.orig	2010-04-25 07:58:15.000000000 +0000
++++ configure
+@@ -33990,7 +33990,7 @@ fi
+     *-pc-windows* | *-pc-winnt* | *-pc-cygwin* | *-pc-mingw32*)
+     NETLOW_OBJS="$NETLOW_OBJS eth_win32.o"
+     ;;
+-    *-macosx* | *-darwin*)
++    *--doesntwork-macosx* | *--doesntwork-darwin*)
+     NETLOW_OBJS="$NETLOW_OBJS eth_tuntap.o"
+     cat >>confdefs.h <<\_ACEOF
+ #define HAVE_TUNTAP 1
