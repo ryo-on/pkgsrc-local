@@ -1,0 +1,5 @@
+$NetBSD: distinfo,v 1.16 2007/11/29 22:45:23 wiz Exp $
+
+SHA1 (allegro-4.4.0.1.tar.gz) = c763b495374f27fc8bc2696302b0e9e3ddd5f667
+RMD160 (allegro-4.4.0.1.tar.gz) = ae2f58ce2f5db180be6fc19f62d617491b2719a7
+Size (allegro-4.4.0.1.tar.gz) = 4629402 bytes
