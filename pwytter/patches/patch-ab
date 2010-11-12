@@ -2,11 +2,13 @@ $NetBSD$
 
 --- setup.py.orig	2007-10-30 01:05:24.000000000 +0000
 +++ setup.py
-@@ -113,7 +113,7 @@ setup(  
+@@ -112,8 +112,8 @@ setup(  
+   package_dir={'twclient': 'twclient',
                 'simplejson': 'twclient/simplejson'},
    #package_data={'twclient': glob.glob('twclient/doc/*.*')},
-   py_modules = ['pwytter','tkBalloon','pwParam','pwTools','pwSplashScreen', 'pwTheme'],
+-  py_modules = ['pwytter','tkBalloon','pwParam','pwTools','pwSplashScreen', 'pwTheme'],
 -  data_files=[("text", glob.glob("*.txt")),
++  py_modules = ['pwytter','tkBalloon','pwCache','pwTools','pwSplashScreen', 'pwTheme'],
 +  data_files=[("@DOCSDIR@", glob.glob("*.txt")),
                ("theme", glob.glob("theme\\*.pwt")),
                ("media", glob.glob("media\\*.png")

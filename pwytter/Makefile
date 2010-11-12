@@ -12,9 +12,7 @@ HOMEPAGE=	http://www.pwytter.com/
 COMMENT=	Pwytter is a standalone Twitter client
 LICENSE=	gnu-gpl-v2
 
-DEPENDS=	${PYPKGPREFIX}-qt4>=4.4:../../x11/py-qt4
-DEPENDS+=	${PYPKGPREFIX}-Tk-[0-9]*:../../x11/py-Tk
-DEPENDS+=	${PYPKGPREFIX}-imaging-[0-9]*:../../graphics/py-imaging
+DEPENDS+=	${PYPKGPREFIX}-imagingtk-[0-9]*:../../graphics/py-imagingtk
 DEPENDS+=	${PYPKGPREFIX}-simplejson-[0-9]*:../../converters/py-simplejson
 
 PKG_DESTDIR_SUPPORT=	user-destdir
@@ -30,6 +28,11 @@ SUBST_STAGE.fix-paths=		pre-configure
 SUBST_MESSAGE.fix-paths=	fixing pathes
 SUBST_FILES.fix-paths=		setup.py
 SUBST_SED.fix-paths=		-e 's,@DOCSDIR@,${DOCSDIR},g'
+
+REPLACE_PYTHON=		${WRKSRC}/*.py
+
+pre-configure:
+	${RM} -r ${WRKSRC}/twclient/simplejson
 
 .include "../../lang/python/egg.mk"
 
