@@ -8,17 +8,17 @@ EXTRACT_SUFX=	.tar.bz2
 
 MAINTAINER=	ryo_on@yk.rim.or.jp
 HOMEPAGE=	http://space.twc.de/~stefan/gst123/
-COMMENT=	gst123 is designed to be a more flexible command line player
-#LICENSE=	# TODO: (see mk/license.mk)
+COMMENT=	The gst123 is designed to be a more flexible command line player
+LICENSE=	gnu-gpl-v2
 
 PKG_DESTDIR_SUPPORT=	user-destdir
 
 GNU_CONFIGURE=	yes
 USE_LANGUAGES=	c c++
 
-USE_TOOLS+=	pkg-config
+USE_TOOLS+=	pkg-config gmake
 
-USE_BUILTIN.ncurses=	no
+USE_NCURSES=	yes
 
 .include "../../multimedia/gstreamer0.10/buildlink3.mk"
 .include "../../x11/gtk2/buildlink3.mk"
