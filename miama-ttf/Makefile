@@ -4,7 +4,7 @@
 DISTNAME=	miama
 PKGNAME=	${DISTNAME}-1
 CATEGORIES=	fonts
-MASTER_SITES=	http://github.com/downloads/ryo-on/pkgsrc-local/
+MASTER_SITES=	http://ryo-on.users.sourceforge.net/distrib/fonts/
 EXTRACT_SUFX=	.zip
 
 MAINTAINER=	ryo_on@yk.rim.or.jp
