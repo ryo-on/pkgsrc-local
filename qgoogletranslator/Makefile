@@ -17,4 +17,5 @@ USE_LANGUAGES=	c++ c
 USE_CMAKE=	yes
 
 .include "../../x11/qt4-libs/buildlink3.mk"
+.include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../mk/bsd.pkg.mk"
