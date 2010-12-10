@@ -25,16 +25,15 @@ DIST_SUBDIR=		flash/${FLASH_VERS}
 CRYPTO=			yes
 
 EMUL_PLATFORMS=		linux-i386
-EMUL_MODULES.linux=	compat gtk2 x11
+EMUL_MODULES.linux=	compat gtk2 x11 locale krb5
 EMUL_REQD=		suse>=10.0
 
 .include "../../mk/bsd.prefs.mk"
 
 # Defaults so lintpkgsrc is happy
-FLASH_VERS=		10.1.82.76
+FLASH_VERS=		10.1.102.65
 .if ${EMUL_PLATFORM} == "linux-i386"
 DISTUNAME=		linux
-#DISTNAME=		flashplayer10_install_${DISTUNAME}_070208
 DISTNAME=		install_flash_player_10_${DISTUNAME}
 WRKNAME=		install_flash_player_10_${DISTUNAME}
 .endif
