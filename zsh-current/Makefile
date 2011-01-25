@@ -7,6 +7,8 @@ ZSH_MAINTAINER=	uebayasi@NetBSD.org
 
 USE_TOOLS+=	env
 
+CONFIGURE_ARGS+=	--with-term-lib="tinfo terminfo termcap"
+
 SUBST_CLASSES+=	prefix-fixup
 SUBST_STAGE.prefix-fixup=	pre-configure
 SUBST_FILES.prefix-fixup= \
