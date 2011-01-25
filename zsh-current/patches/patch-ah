@@ -1,0 +1,22 @@
+$NetBSD$
+
+--- Config/installfns.sh.orig	2010-02-02 14:55:45.000000000 +0000
++++ Config/installfns.sh
+@@ -45,12 +45,10 @@ for file in $allfuncs; do
+       esac
+     fi
+     test -d $instdir || /bin/sh $sdir_top/mkinstalldirs $instdir || exit 1
+-    $INSTALL_DATA $sdir_top/$file $instdir || exit 1
+-    read line < $sdir_top/$file
+-    case "$line" in
+-      '#!'*)
+-      chmod +x $instdir/`echo $file | sed -e 's%^.*/%%'`
+-      ;;
+-    esac
++    if test -x $sdir_top/$file; then
++      $INSTALL_SCRIPT $sdir_top/$file $instdir || exit 1
++    else
++      $INSTALL_DATA $sdir_top/$file $instdir || exit 1
++    fi
+   fi
+ done

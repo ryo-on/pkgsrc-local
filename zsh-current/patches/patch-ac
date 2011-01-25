@@ -1,0 +1,32 @@
+$NetBSD$
+
+--- configure.orig	2010-09-23 09:42:09.000000000 +0000
++++ configure
+@@ -20091,6 +20091,10 @@ $as_echo "$zsh_cv_sys_elf" >&6; }
+         DLLD="${DLLD=$CC}"
+         DLLDARG=""
+       ;;
++      *interix*)
++        DLLD="${DLLD=$CC}"
++        DLLDARG=""
++      ;;
+       * )
+ 	DLLD="${DLLD=ld}"
+ 	DLLDARG=""
+@@ -20101,6 +20105,7 @@ $as_echo "$zsh_cv_sys_elf" >&6; }
+     case "$host_os" in
+       hpux*)   DLLDFLAGS="${DLLDFLAGS=-shared}" ;;
+       darwin*) DLCFLAGS="${DLCFLAGS=-fno-common}" ;;
++      interix*) DLCFLAGS="${DLCFLAGS=}" ;;
+       *)       DLCFLAGS="${DLCFLAGS=-fPIC}" ;;
+     esac
+   else
+@@ -20115,7 +20120,7 @@ $as_echo "$zsh_cv_sys_elf" >&6; }
+   fi
+   case "$host_os" in
+     osf*) DLLDFLAGS="${DLLDFLAGS=-shared -expect_unresolved '*'}" ;;
+-    *freebsd*|linux*|irix*|gnu*|dragonfly*) DLLDFLAGS="${DLLDFLAGS=-shared}" ;;
++    *freebsd*|linux*|irix*|gnu*|interix*|dragonfly*) DLLDFLAGS="${DLLDFLAGS=-shared}" ;;
+     sunos*)       DLLDFLAGS="${DLLDFLAGS=-assert nodefinitions}" ;;
+     sysv4*|esix*) DLLDFLAGS="${DLLDFLAGS=-G $ldflags}" ;;
+     netbsd*)      DLLDFLAGS="${DLLDFLAGS=${DLLDARG}-x -shared --whole-archive}" ;;
